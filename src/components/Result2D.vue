@@ -51,11 +51,11 @@
     mounted() {
       var mapChart = echarts.init(document.getElementById('mychart'));
       function getMap(){
-        return axios.get('../src/static/africa.json')
+        return axios.get('src/static/africa.json')
       };
 
       function getMapData(){
-        return axios.get('../src/static/child_hiv.json')
+        return axios.get('src/static/child_hiv.json')
       };
 
       axios.all([getMap(), getMapData()])
